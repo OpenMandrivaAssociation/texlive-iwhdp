@@ -23,16 +23,8 @@ The document class is for creating Discussion Papers of the
 Halle Institute for Economic Research (IWH) in Halle, Germany.
 The class offers options for both English and German texts.
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -48,7 +40,6 @@ The class offers options for both English and German texts.
 %doc %{_texmfdistdir}/doc/latex/iwhdp/iwhdp_Manual.tex
 %doc %{_texmfdistdir}/doc/latex/iwhdp/iwhdp_paper.bib
 %doc %{_texmfdistdir}/doc/latex/iwhdp/iwhdp_paper.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -59,5 +50,3 @@ The class offers options for both English and German texts.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
