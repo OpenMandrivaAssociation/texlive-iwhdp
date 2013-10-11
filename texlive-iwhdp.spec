@@ -1,12 +1,12 @@
-# revision 24790
+# revision 27639
 # category Package
 # catalog-ctan /macros/latex/contrib/iwhdp
-# catalog-date 2011-12-07 15:00:15 +0100
+# catalog-date 2012-09-10 15:57:53 +0200
 # catalog-license lppl1.3
-# catalog-version 0.25
+# catalog-version 0.30
 Name:		texlive-iwhdp
-Version:	0.25
-Release:	2
+Version:	0.30
+Release:	1
 Summary:	Halle Institute for Economic Research (IWH) Discussion Papers
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/iwhdp
@@ -50,21 +50,3 @@ The class offers options for both English and German texts.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.25-2
-+ Revision: 752880
-- Rebuild to reduce used resources
-
-* Fri Dec 09 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.25-1
-+ Revision: 739786
-- texlive-iwhdp
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.24-1
-+ Revision: 718744
-- texlive-iwhdp
-- texlive-iwhdp
-- texlive-iwhdp
-- texlive-iwhdp
-
