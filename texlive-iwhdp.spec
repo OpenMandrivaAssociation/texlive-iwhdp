@@ -6,7 +6,7 @@
 # catalog-version 0.25
 Name:		texlive-iwhdp
 Version:	0.25
-Release:	2
+Release:	3
 Summary:	Halle Institute for Economic Research (IWH) Discussion Papers
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/iwhdp
