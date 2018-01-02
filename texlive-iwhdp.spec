@@ -1,12 +1,6 @@
-# revision 27639
-# category Package
-# catalog-ctan /macros/latex/contrib/iwhdp
-# catalog-date 2012-09-10 15:57:53 +0200
-# catalog-license lppl1.3
-# catalog-version 0.30
 Name:		texlive-iwhdp
-Version:	0.30
-Release:	9
+Version:	0.50
+Release:	1
 Summary:	Halle Institute for Economic Research (IWH) Discussion Papers
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/iwhdp
@@ -33,13 +27,8 @@ The class offers options for both English and German texts.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/iwhdp/iwhdp.cls
-%doc %{_texmfdistdir}/doc/latex/iwhdp/README
-%doc %{_texmfdistdir}/doc/latex/iwhdp/iwhdp_Manual.bib
-%doc %{_texmfdistdir}/doc/latex/iwhdp/iwhdp_Manual.pdf
-%doc %{_texmfdistdir}/doc/latex/iwhdp/iwhdp_Manual.tex
-%doc %{_texmfdistdir}/doc/latex/iwhdp/iwhdp_paper.bib
-%doc %{_texmfdistdir}/doc/latex/iwhdp/iwhdp_paper.tex
+%{_texmfdistdir}/tex/latex/iwhdp
+%doc %{_texmfdistdir}/doc/latex/iwhdp
 
 #-----------------------------------------------------------------------
 %prep
