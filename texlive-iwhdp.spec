@@ -1,6 +1,6 @@
 Name:		texlive-iwhdp
 Version:	0.50
-Release:	1
+Release:	2
 Summary:	Halle Institute for Economic Research (IWH) Discussion Papers
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/iwhdp
