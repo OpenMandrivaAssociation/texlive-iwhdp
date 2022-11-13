@@ -1,12 +1,12 @@
 Name:		texlive-iwhdp
-Version:	0.50
-Release:	2
+Version:	37552
+Release:	1
 Summary:	Halle Institute for Economic Research (IWH) Discussion Papers
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/iwhdp
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/iwhdp.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/iwhdp.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/iwhdp.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/iwhdp.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -18,12 +18,12 @@ Halle Institute for Economic Research (IWH) in Halle, Germany.
 The class offers options for both English and German texts.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -32,7 +32,7 @@ The class offers options for both English and German texts.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
