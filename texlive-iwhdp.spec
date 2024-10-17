@@ -3,7 +3,7 @@ Version:	37552
 Release:	2
 Summary:	Halle Institute for Economic Research (IWH) Discussion Papers
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/iwhdp
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/iwhdp
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/iwhdp.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/iwhdp.doc.r%{version}.tar.xz
